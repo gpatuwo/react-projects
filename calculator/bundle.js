@@ -9546,7 +9546,7 @@ var _calculator2 = _interopRequireDefault(_calculator);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 document.addEventListener('DOMContentLoaded', function () {
-  ReactDom.render(_react2.default.createElement(_calculator2.default, null), document.getElementById('main'));
+  _reactDom2.default.render(_react2.default.createElement(_calculator2.default, null), document.getElementById('main'));
 });
 
 /***/ }),

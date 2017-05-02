@@ -5,5 +5,5 @@ import Calculator from 'calculator';
 
 document.addEventListener('DOMContentLoaded',
   function (){
-    ReactDom.render(<Calculator />, document.getElementById('main'));
+    ReactDOM.render(<Calculator />, document.getElementById('main'));
   });
