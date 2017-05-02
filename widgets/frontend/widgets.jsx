@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-
+import Clock from './clock';
 
 class Root extends React.Component {
     constructor(props){
@@ -11,8 +11,8 @@ class Root extends React.Component {
     render(){
       return (
         <div>
-          <h1>hi there! welcome to root</h1>
-
+          <h1>Welcome to Widgets!</h1>
+          <Clock />
         </div>
       );
     }
