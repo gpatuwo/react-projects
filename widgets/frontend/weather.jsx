@@ -31,6 +31,9 @@ class Weather extends React.Component {
         let data = JSON.parse(xmlRequest.response);
         this.setState({temp: data.main.temp});
         this.setState({location: data.name});
+      } else if (xmlRequest.readyState === XMLHttpRequest.DONE
+        && xmlRequest.status !== 200){
+        console.log("oops xml request failed");
       }
     };
     // initialize request
