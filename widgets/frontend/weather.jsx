@@ -28,6 +28,7 @@ class Weather extends React.Component {
     xmlRequest.onreadystatechange = () => {
       if (xmlRequest.status === 200 &&
         xmlRequest.readyState === XMLHttpRequest.DONE) {
+        // use json to convert response string into object
         let data = JSON.parse(xmlRequest.response);
         this.setState({temp: data.main.temp});
         this.setState({location: data.name});
