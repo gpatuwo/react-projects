@@ -39,12 +39,22 @@ class Weather extends React.Component {
   }
 
   render(){
+    let content = <div></div>;
+
+    if (this.state.temp) {
+      content = <div>
+                  <h3>Current Location: {this.state.location}</h3>
+                  <h3>Temp: {this.state.temp}</h3>
+                </div>;
+    } else {
+      content = <div>loading location and weather data...</div>;
+    }
+
     return (
       <div className='wrapper'>
         <h2>Weather</h2>
         <div className='section-div'>
-          <h3>Current Location: {this.state.location}</h3>
-          <h3>Temp: {this.state.temp}</h3>
+          {content}
         </div>
       </div>
     );
