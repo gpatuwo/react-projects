@@ -5,3 +5,6 @@
 **/bundle.js.map
 
 debugging/
+
+# hiding my API secret keys
+**/config.js
