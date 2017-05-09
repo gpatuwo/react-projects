@@ -19,7 +19,7 @@ class Autocomplete extends React.Component {
 
   render(){
     let searchResults = <div></div>;
-
+    // display all names if no search or deletes search
     if (this.state.inputVal === '') {
       searchResults = this.props.names.map( (el, idx) =>
         <li className='name' key={idx}>{el}</li>);
@@ -34,7 +34,7 @@ class Autocomplete extends React.Component {
         <div className='section-div'>
           <h2>Autocomplete Names!</h2>
           <input onChange={this.handleInput}
-             value={this.state.inputVal}></input>
+             value={this.state.inputVal} placeholder='Search...'></input>
           <div id='results'>
             {searchResults}
           </div>
