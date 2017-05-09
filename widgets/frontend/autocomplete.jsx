@@ -31,7 +31,8 @@ class Autocomplete extends React.Component {
         <li className='name' key={idx} onClick={this.handleClick}>{el}</li>);
     } else {
       // return what matches with input
-      searchResults = this.matches(this.state.inputVal.toLowerCase()).map( (el, idx) =>
+      searchResults =
+       this.matches(this.state.inputVal.toLowerCase()).map( (el, idx) =>
         <li className='name' key={idx} onClick={this.handleClick}>{el}</li>);
     }
 

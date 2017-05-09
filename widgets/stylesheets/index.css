@@ -40,3 +40,11 @@ span, article, footer, time, small {
 input {
   border: 1px solid black;
 }
+
+.name {
+  padding: 3px;
+}
+.name:hover {
+  background: lightblue;
+  cursor: pointer;
+}
