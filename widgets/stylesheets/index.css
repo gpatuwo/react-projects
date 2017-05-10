@@ -48,3 +48,29 @@ input {
   background: lightblue;
   cursor: pointer;
 }
+
+.tabs {
+  border: 1px solid black;
+  background: darksalmon;
+  padding: 10px;
+  margin: 5px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.tab-headers {
+  display: flex;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+}
+
+.tab-header {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.tab-header:hover {
+  background: aliceblue;
+}
