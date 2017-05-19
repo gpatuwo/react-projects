@@ -2,12 +2,21 @@ import React from 'react';
 
 class Header extends React.Component {
   render(){
-    let tabs = this.props.tabs.map((tab, idx) =>
-    <li key={idx}
-      onClick={this.props.onTabClick.bind(null, idx)}
-      className='tab-header'>
-      {tab.title}
-    </li>);
+
+    let tabs = this.props.tabs.map((tab, idx) => {
+      let selected = this.props.selectedTab;
+      let tabClass = 'tab-header';
+
+      if (idx === selected) tabClass = 'tab-header-selected';
+
+      return (
+        <li key={idx}
+          onClick={this.props.onTabClick.bind(null, idx)}
+          className={tabClass}>
+          {tab.title}{' '}
+        </li>
+      );
+    });
 
     return(
       <ul className='tab-headers'>

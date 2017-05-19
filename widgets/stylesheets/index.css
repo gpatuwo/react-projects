@@ -55,11 +55,11 @@ input {
   padding: 10px;
   margin: 5px 0;
   font-family: 'Roboto', sans-serif;
+  width: 200px;
 }
 
 .tab-headers {
   display: flex;
-  width: 50%;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-around;
@@ -71,6 +71,20 @@ input {
   border-radius: 10px;
 }
 
+.tab-header-selected {
+  background: aliceblue;
+}
+
 .tab-header:hover {
   background: aliceblue;
+  cursor: pointer;
+}
+
+.tab-content{
+  background: aliceblue;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
 }
